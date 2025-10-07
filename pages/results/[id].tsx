@@ -142,16 +142,6 @@ export default function ResultsDetailPage(
 
   return (
     <>
-      {/* CRITICAL: Override theme CSS variables */}
-      <style jsx global>{`
-        * {
-          --ink: #000000 !important;
-          color: inherit !important;
-        }
-        body {
-          color: #111111 !important;
-        }
-      `}</style>
       <main className="min-h-screen bg-slate-100 py-10 px-4">
         <div className="max-w-5xl mx-auto">
         <Link href="/" className="text-emerald-600 underline inline-block mb-5">
