@@ -1,0 +1,13 @@
+
+> bizsprout@0.1.0 start /Users/jessicacompere/Projects/bizsprout
+> next start -p $PORT
+
+   ▲ Next.js 15.5.2
+   - Local:        http://localhost:3002
+   - Network:      http://192.168.0.13:3002
+
+ ✓ Starting...
+ ✓ Ready in 303ms
+TypeError: (0 , f.if) is not a function
+    at h (.next/server/pages/api/report.js:1:2320)
+    at async Module.m (.next/server/pages/api/report.js:1:1660)

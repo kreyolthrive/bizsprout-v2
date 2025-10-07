@@ -1,0 +1,8 @@
+✅  .lighthouseci/ directory writable
+⚠️   Configuration file not found
+✅  Chrome installation found
+Healthcheck passed!
+
+Running Lighthouse 3 time(s) on http://localhost:3002/
+Run #1...failed!
+

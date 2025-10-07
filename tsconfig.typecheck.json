@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "@/*": ["src/*"] },
+    "noEmit": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+    "target": "ES2020",
+  "lib": ["dom", "es2021"],
+  "jsx": "preserve",
+  "types": ["react", "node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "incremental": false,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true
+  },
+  "files": [
+    "next-env-typecheck.d.ts",
+    "src/lib/contextualPivots.ts",
+    "src/lib/vagueness.ts",
+    "src/components/BusinessModelAwarePivotView.tsx",
+    "src/components/VagueIdeaPrompt.tsx",
+    "src/components/HealthcarePivotView.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    // Exclude all legacy Pages router files for this typecheck target
+    "pages/**",
+    "src/pages/**",
+    "test-results/**",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "smoke.spec.ts",
+    "scripts/**"
+  ]
+}

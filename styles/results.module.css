@@ -1,0 +1,28 @@
+.resultsRoot {
+  /* Ensure full-contrast text inside results regardless of global body color */
+  color: #0B1220; /* var(--ink) */
+}
+
+.resultsRoot h1,
+.resultsRoot h2,
+.resultsRoot h3,
+.resultsRoot p,
+.resultsRoot li,
+.resultsRoot small,
+.resultsRoot a {
+  opacity: 1 !important;
+  color: inherit;
+}
+
+/* Reset global gradient heading applied in theme.css */
+.resultsHeading {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: currentColor !important;
+  color: #10B981 !important; /* green */
+}
+
+.mutedText {
+  color: #667085; /* var(--muted) */
+}

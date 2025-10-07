@@ -1,0 +1,11 @@
+HTTP/1.1 404 Not Found
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+X-Powered-By: Next.js
+ETag: "s7rhi3n5i01k5"
+Content-Type: text/html; charset=utf-8
+Content-Length: 2021
+Vary: Accept-Encoding
+Date: Thu, 18 Sep 2025 23:45:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+

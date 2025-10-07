@@ -1,0 +1,83 @@
+
+> bizsprout@0.1.0 start /Users/jessicacompere/Projects/bizsprout
+> next start -p $PORT
+
+   ▲ Next.js 15.5.2
+   - Local:        http://localhost:3002
+   - Network:      http://192.168.0.13:3002
+
+ ✓ Starting...
+ ✓ Ready in 237ms
+TypeError: (0 , f.rateLimit) is not a function
+    at h (.next/server/pages/api/report.js:1:2327)
+    at async Module.m (.next/server/pages/api/report.js:1:1660)
+{"t":1758317012870,"level":"debug","msg":"rate-disabled","reqId":"2b4b6fae-cb43-41b8-84e4-28b21b3dc89b"}
+{"t":1758317012873,"level":"info","msg":"rate-ok-email","email_hash":"9ae36041ff11c0e04a9e1decbcfee675dcdd02fee90751f014a941bee58079e9","remaining":0}
+{"t":1758317012873,"level":"info","msg":"rate-ok-email","email_hash":"9ae36041ff11c0e04a9e1decbcfee675dcdd02fee90751f014a941bee58079e9","remaining":0}
+{"t":1758317013737,"level":"info","msg":"dedupe","reqId":"2b4b6fae-cb43-41b8-84e4-28b21b3dc89b","maskedEmail":"sp***@example.com"}
+{"t":1758317013737,"level":"debug","msg":"done","reqId":"2b4b6fae-cb43-41b8-84e4-28b21b3dc89b","durMs":867.381}
+{"t":1758317013758,"level":"debug","msg":"rate-disabled","reqId":"f7bd1328-3ac1-403a-aa04-681484285e24"}
+{"t":1758317013758,"level":"info","msg":"rate-ok-email","email_hash":"9ae36041ff11c0e04a9e1decbcfee675dcdd02fee90751f014a941bee58079e9","remaining":0}
+{"t":1758317013758,"level":"info","msg":"rate-ok-email","email_hash":"9ae36041ff11c0e04a9e1decbcfee675dcdd02fee90751f014a941bee58079e9","remaining":0}
+{"t":1758317013966,"level":"info","msg":"dedupe","reqId":"f7bd1328-3ac1-403a-aa04-681484285e24","maskedEmail":"sp***@example.com"}
+{"t":1758317013968,"level":"debug","msg":"done","reqId":"f7bd1328-3ac1-403a-aa04-681484285e24","durMs":209.538916}
+{"t":1758317013989,"level":"debug","msg":"rate-disabled","reqId":"b5c94e07-c8b7-44f2-8d56-dbf3f5cd2456"}
+{"t":1758317013989,"level":"info","msg":"rate-ok-email","email_hash":"9ae36041ff11c0e04a9e1decbcfee675dcdd02fee90751f014a941bee58079e9","remaining":0}
+{"t":1758317013989,"level":"info","msg":"rate-ok-email","email_hash":"9ae36041ff11c0e04a9e1decbcfee675dcdd02fee90751f014a941bee58079e9","remaining":0}
+{"t":1758317014161,"level":"info","msg":"dedupe","reqId":"b5c94e07-c8b7-44f2-8d56-dbf3f5cd2456","maskedEmail":"sp***@example.com"}
+{"t":1758317014162,"level":"debug","msg":"done","reqId":"b5c94e07-c8b7-44f2-8d56-dbf3f5cd2456","durMs":172.872541}
+{"t":1758317014183,"level":"debug","msg":"rate-disabled","reqId":"32f2cc9a-3c84-4eb2-8e9f-96b14eafdb6c"}
+{"t":1758317014184,"level":"info","msg":"rate-ok-email","email_hash":"9ae36041ff11c0e04a9e1decbcfee675dcdd02fee90751f014a941bee58079e9","remaining":0}
+{"t":1758317014184,"level":"info","msg":"rate-ok-email","email_hash":"9ae36041ff11c0e04a9e1decbcfee675dcdd02fee90751f014a941bee58079e9","remaining":0}
+{"t":1758317014376,"level":"info","msg":"dedupe","reqId":"32f2cc9a-3c84-4eb2-8e9f-96b14eafdb6c","maskedEmail":"sp***@example.com"}
+{"t":1758317014377,"level":"debug","msg":"done","reqId":"32f2cc9a-3c84-4eb2-8e9f-96b14eafdb6c","durMs":193.768416}
+{"t":1758317047237,"level":"debug","msg":"rate-disabled","reqId":"b06f25d1-6d87-4029-bbfb-ddee09a79f1e"}
+{"t":1758317047237,"level":"info","msg":"rate-ok-email","email_hash":"2da939ecada451f809c092461d6c471cc07b817a5b41814a264507af2190c959","remaining":0}
+{"t":1758317047237,"level":"info","msg":"rate-ok-email","email_hash":"2da939ecada451f809c092461d6c471cc07b817a5b41814a264507af2190c959","remaining":0}
+{"t":1758317047489,"level":"info","msg":"insert-ok","reqId":"b06f25d1-6d87-4029-bbfb-ddee09a79f1e","id":"2c810f3b-239b-41fa-8fe1-453c6ffe1d0f"}
+{"t":1758317047491,"level":"debug","msg":"done","reqId":"b06f25d1-6d87-4029-bbfb-ddee09a79f1e","durMs":254.089416}
+{"t":1758317047513,"level":"debug","msg":"rate-disabled","reqId":"2d535b3b-d36f-4edc-a1e8-2a82d5fe4391"}
+{"t":1758317047513,"level":"info","msg":"rate-ok-email","email_hash":"2296facb1773b541f0d2021b9c928b61aa0bbfa7fe7fd4745abeebe1d2fa3c81","remaining":0}
+{"t":1758317047513,"level":"info","msg":"rate-ok-email","email_hash":"2296facb1773b541f0d2021b9c928b61aa0bbfa7fe7fd4745abeebe1d2fa3c81","remaining":0}
+{"t":1758317047649,"level":"info","msg":"insert-ok","reqId":"2d535b3b-d36f-4edc-a1e8-2a82d5fe4391","id":"b9242b58-58bd-4e66-aaf1-9d0064c46b33"}
+{"t":1758317047649,"level":"debug","msg":"done","reqId":"2d535b3b-d36f-4edc-a1e8-2a82d5fe4391","durMs":136.1815}
+{"t":1758317047672,"level":"debug","msg":"rate-disabled","reqId":"bba91ace-1139-407e-975a-137821e14535"}
+{"t":1758317047673,"level":"info","msg":"rate-ok-email","email_hash":"7245f1b2d4fbb606aec243a9905e394a170260732237130998d5892dfb7d27e8","remaining":0}
+{"t":1758317047673,"level":"info","msg":"rate-ok-email","email_hash":"7245f1b2d4fbb606aec243a9905e394a170260732237130998d5892dfb7d27e8","remaining":0}
+{"t":1758317047806,"level":"info","msg":"insert-ok","reqId":"bba91ace-1139-407e-975a-137821e14535","id":"e2f55edb-393a-4008-ab89-d1dfba554fc2"}
+{"t":1758317047807,"level":"debug","msg":"done","reqId":"bba91ace-1139-407e-975a-137821e14535","durMs":135.247084}
+{"t":1758317047830,"level":"debug","msg":"rate-disabled","reqId":"7ad52615-e103-4e25-9a9c-7073b879fa79"}
+{"t":1758317047830,"level":"info","msg":"rate-ok-email","email_hash":"6705b14c6e4d0ef60bb80b993f0ebcc67b65c4e71a3a766a7bd3e1481443f8fc","remaining":0}
+{"t":1758317047830,"level":"info","msg":"rate-ok-email","email_hash":"6705b14c6e4d0ef60bb80b993f0ebcc67b65c4e71a3a766a7bd3e1481443f8fc","remaining":0}
+{"t":1758317047974,"level":"info","msg":"insert-ok","reqId":"7ad52615-e103-4e25-9a9c-7073b879fa79","id":"3d7c4a09-a4ad-4f02-80ed-5da4905d923b"}
+{"t":1758317047975,"level":"debug","msg":"done","reqId":"7ad52615-e103-4e25-9a9c-7073b879fa79","durMs":144.947375}
+{"t":1758317047996,"level":"debug","msg":"rate-disabled","reqId":"ce1ff211-66cd-4e4e-ba01-56cc2d293a4b"}
+{"t":1758317047997,"level":"info","msg":"rate-ok-email","email_hash":"7cdf6fab760085d465984d1871e73f7e6e41fdee2a2754518ad536d0efac2df7","remaining":0}
+{"t":1758317047997,"level":"info","msg":"rate-ok-email","email_hash":"7cdf6fab760085d465984d1871e73f7e6e41fdee2a2754518ad536d0efac2df7","remaining":0}
+{"t":1758317048140,"level":"info","msg":"insert-ok","reqId":"ce1ff211-66cd-4e4e-ba01-56cc2d293a4b","id":"ec79330a-73ec-44dc-b52e-57105649dc25"}
+{"t":1758317048141,"level":"debug","msg":"done","reqId":"ce1ff211-66cd-4e4e-ba01-56cc2d293a4b","durMs":144.829583}
+{"t":1758317048164,"level":"debug","msg":"rate-disabled","reqId":"8745efed-c172-4149-b76e-d2c3fbdf85c1"}
+{"t":1758317048164,"level":"info","msg":"rate-ok-email","email_hash":"fe4b4ce066ca1fbc637c0292292f6af61624fa921baf40f8fec11ee36ee8269c","remaining":0}
+{"t":1758317048164,"level":"info","msg":"rate-ok-email","email_hash":"fe4b4ce066ca1fbc637c0292292f6af61624fa921baf40f8fec11ee36ee8269c","remaining":0}
+{"t":1758317048282,"level":"info","msg":"insert-ok","reqId":"8745efed-c172-4149-b76e-d2c3fbdf85c1","id":"c23d9905-f564-450d-bce8-b56a8d66aafc"}
+{"t":1758317048282,"level":"debug","msg":"done","reqId":"8745efed-c172-4149-b76e-d2c3fbdf85c1","durMs":118.389042}
+{"t":1758317048304,"level":"debug","msg":"rate-disabled","reqId":"556cf9e1-4ecb-434e-9641-06d32c27c4f1"}
+{"t":1758317048305,"level":"info","msg":"rate-ok-email","email_hash":"b56e7313edd14e1c40e9bd7568a972d88c72aa17efa0f786df18a94754490fb0","remaining":0}
+{"t":1758317048305,"level":"info","msg":"rate-ok-email","email_hash":"b56e7313edd14e1c40e9bd7568a972d88c72aa17efa0f786df18a94754490fb0","remaining":0}
+{"t":1758317048404,"level":"info","msg":"insert-ok","reqId":"556cf9e1-4ecb-434e-9641-06d32c27c4f1","id":"fbadc0a5-a4bf-4331-a609-92e93d901952"}
+{"t":1758317048406,"level":"debug","msg":"done","reqId":"556cf9e1-4ecb-434e-9641-06d32c27c4f1","durMs":101.382417}
+{"t":1758317048428,"level":"debug","msg":"rate-disabled","reqId":"5d384566-a01d-4060-a63a-297268919536"}
+{"t":1758317048428,"level":"info","msg":"rate-ok-email","email_hash":"2ccaf05aa6b38751ae382959e8d8fdcb5e1bdb1215ede8c7fb6cd37f4a43b6ba","remaining":0}
+{"t":1758317048428,"level":"info","msg":"rate-ok-email","email_hash":"2ccaf05aa6b38751ae382959e8d8fdcb5e1bdb1215ede8c7fb6cd37f4a43b6ba","remaining":0}
+{"t":1758317048541,"level":"info","msg":"insert-ok","reqId":"5d384566-a01d-4060-a63a-297268919536","id":"e01b4f13-e287-4d14-9dd4-c0ec8079aa02"}
+{"t":1758317048543,"level":"debug","msg":"done","reqId":"5d384566-a01d-4060-a63a-297268919536","durMs":114.913834}
+{"t":1758317048565,"level":"debug","msg":"rate-disabled","reqId":"48341115-25b5-4f3b-a9fd-d86a06c85146"}
+{"t":1758317048565,"level":"info","msg":"rate-ok-email","email_hash":"22ee90592ed1ee3c3ce89d50ec7089bd17744dc31d1abe66ec762c1621a0c61c","remaining":0}
+{"t":1758317048565,"level":"info","msg":"rate-ok-email","email_hash":"22ee90592ed1ee3c3ce89d50ec7089bd17744dc31d1abe66ec762c1621a0c61c","remaining":0}
+{"t":1758317048657,"level":"info","msg":"insert-ok","reqId":"48341115-25b5-4f3b-a9fd-d86a06c85146","id":"d30b1176-0f33-43b0-9d6a-ffbd1b3775f0"}
+{"t":1758317048658,"level":"debug","msg":"done","reqId":"48341115-25b5-4f3b-a9fd-d86a06c85146","durMs":92.916875}
+{"t":1758317048677,"level":"debug","msg":"rate-disabled","reqId":"aa3da74d-5d33-4f5a-bb40-b4e77376ccf8"}
+{"t":1758317048677,"level":"info","msg":"rate-ok-email","email_hash":"401a4a86cc86e7aae9fed61be81cb94bbbf663181e3d5b38757a82478c5bb9fd","remaining":0}
+{"t":1758317048677,"level":"info","msg":"rate-ok-email","email_hash":"401a4a86cc86e7aae9fed61be81cb94bbbf663181e3d5b38757a82478c5bb9fd","remaining":0}
+{"t":1758317048793,"level":"info","msg":"insert-ok","reqId":"aa3da74d-5d33-4f5a-bb40-b4e77376ccf8","id":"615da147-180b-4506-994d-ae28cfdf7c74"}
+{"t":1758317048793,"level":"debug","msg":"done","reqId":"aa3da74d-5d33-4f5a-bb40-b4e77376ccf8","durMs":116.182792}

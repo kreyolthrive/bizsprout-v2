@@ -1,0 +1,20 @@
+# src/lib/regulatory/matrix.yml
+data_broker:
+  jurisdictions:
+    EU:
+      statutes: ["GDPR (Art. 6, 7, 9, 44–49)"]
+      default_severity: BLOCKER
+      enforcement_examples:
+        - "Meta EU-US transfer fine (2023)"
+    US:
+      statutes: ["CCPA/CPRA", "State privacy acts", "FTC Act §5"]
+      default_severity: HIGH
+  mandatory_controls:
+    - consent_management
+    - opt_out_of_sale
+    - dsar_workflows
+    - dpa_with_providers
+  typical_costs_usd:
+    privacy_counsel: [60_000, 150_000]
+    consent_stack:   [50_000, 120_000]
+    security_cert:   [120_000, 250_000]

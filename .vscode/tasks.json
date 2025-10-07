@@ -1,0 +1,114 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Typecheck project",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project (retry)",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project (retry)",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project (retry)",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project (retry)",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project (retry)",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "List Typecheck Files",
+			"type": "shell",
+			"command": "pnpm exec tsc -p tsconfig.typecheck.json --listFiles --pretty false | sed -n '1,200p' | grep -n \"pages/index.tsx\" || true",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project (retry)",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Typecheck project",
+			"type": "shell",
+			"command": "pnpm run typecheck",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Run unit tests",
+			"type": "shell",
+			"command": "pnpm run test:unit",
+			"args": [],
+			"isBackground": false
+		},
+		{
+			"label": "Run e2e smoke",
+			"type": "shell",
+			"command": "pnpm run test:e2e",
+			"args": [],
+			"isBackground": false
+		}
+	]
+}

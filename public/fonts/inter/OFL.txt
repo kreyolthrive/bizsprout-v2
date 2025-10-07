@@ -1,0 +1,2 @@
+This is a placeholder for the SIL Open Font License (OFL) for Inter.
+Fetch the official license text from https://github.com/rsms/inter/blob/master/LICENSE.txt and replace this placeholder if required for distribution.

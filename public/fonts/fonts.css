@@ -1,0 +1,68 @@
+/* Self-hosted font declarations; only woff2 variants shipped for modern browsers */
+/* Inter weights: 400,500,600,700,800 */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter Regular'), local('Inter-Regular'),
+       url('/fonts/inter/Inter-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Inter Medium'), local('Inter-Medium'),
+       url('/fonts/inter/Inter-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Inter SemiBold'), local('Inter-SemiBold'),
+       url('/fonts/inter/Inter-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Inter Bold'), local('Inter-Bold'),
+       url('/fonts/inter/Inter-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Inter ExtraBold'), local('Inter-ExtraBold'),
+       url('/fonts/inter/Inter-800.woff2') format('woff2');
+}
+
+/* General Sans weights: 500,600,700 (optional; not auto-provisioned) */
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('General Sans Medium'),
+       url('/fonts/general-sans/GeneralSans-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('General Sans SemiBold'),
+       url('/fonts/general-sans/GeneralSans-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('General Sans Bold'),
+       url('/fonts/general-sans/GeneralSans-700.woff2') format('woff2');
+}

@@ -1,0 +1,10 @@
+{
+  "_comment": "Recorded SHA256 hashes for self-hosted font binaries. Auto-generated.",
+  "files": {
+    "inter/Inter-400.woff2": "f0bb586459ce8f09b238285040f17e3e9e9538b2c5a7aae0775194e33c36c3c3",
+    "inter/Inter-500.woff2": "b77a86ec16aadc157f4a99e8898d71cd75ea264753d9bdf13f962f8c3988cbb0",
+    "inter/Inter-600.woff2": "6c2a37f82a676bcd441b735e4e2cda4edb8873a059ab9c362a84f0711f257041",
+    "inter/Inter-700.woff2": "5917871d3cc970d8ce195101cbf65c1f68ec948022eb6070030342bb7edfb3bb",
+    "inter/Inter-800.woff2": "e84cb164b47aaad63db12da876c341c59f78b6b25f9069dcdea3c1f8ca8b8f9b"
+  }
+}

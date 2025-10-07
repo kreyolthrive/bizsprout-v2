@@ -1,0 +1,56 @@
+{
+  "name": "bizsprout-landing",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:turbo": "next dev --turbo",
+    "build": "pnpm run fonts:fetch && pnpm run fonts:check && next build",
+    "start": "next start",
+    "test:unit": "playwright test -c playwright.unit.config.ts",
+    "test:e2e": "playwright test",
+    "test:e2e:flows": "playwright test -c playwright.config.ts",
+    "test:e2e:ratelimit": "playwright test -c playwright.ratelimit.config.ts",
+    "test:e2e:ui": "playwright test --ui",
+    "typecheck": "tsc -p tsconfig.typecheck.json",
+    "lint": "eslint .",
+    "lint:ci": "eslint 'src/lib/logger.ts' 'src/lib/middleware/**/*.ts' 'src/lib/validation/**/*.ts' 'pages/api/waitlist.ts' 'pages/api/validate-input.ts' 'pages/api/upload-logo.ts'",
+    "fonts:fetch": "node scripts/fetch-fonts.mjs",
+    "fonts:check": "node scripts/check-fonts.mjs",
+    "verify:fonts": "pnpm run fonts:check",
+    "ci:quick": "pnpm run typecheck && pnpm run verify:fonts",
+    "test:coverage": "c8 --reporter=lcov --reporter=text pnpm run test:unit || true",
+    "fonts:integrity": "node scripts/verify-fonts.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-progress": "^1.1.0",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@react-pdf/renderer": "^4.3.1",
+    "@supabase/supabase-js": "^2.57.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "next": "15.5.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "styled-jsx": "^5.1.7",
+    "tailwind-merge": "^2.5.2"
+  },
+  "packageManager": "pnpm@9.11.0",
+  "engines": {
+    "node": ">=18.17 <23",
+    "pnpm": ">=9"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@fontsource/inter": "^5.2.8",
+    "@playwright/test": "^1.55.1",
+    "@types/node": "24.5.2",
+    "@types/react": "19.1.13",
+    "autoprefixer": "^10.4.14",
+    "c8": "^9.1.0",
+    "eslint": "^9.11.1",
+    "eslint-config-next": "15.5.2",
+    "tailwindcss": "^3.3.2",
+    "typescript": "5.9.2"
+  }
+}

@@ -1,0 +1,351 @@
+
+> bizsprout@0.1.0 dev
+> next dev -p 3002 -p 3002
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3002
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3002)
+    at new Promi ✓ Compiled /api/validate in 484ms (225 modules)
+ POST /api/validate 200 in 557ms
+ ○ Compiling / ...
+ ✓ Compiled / in 837ms (405 modules)
+ GET / 200 in 1149ms
+ GET / 200 in 263ms
+ ✓ Compiled in 314ms (339 modules)
+ GET / 200 in 320ms
+ GET / 200 in 225ms
+ ✓ Compiled in 186ms (339 modules)
+ ✓ Compiled in 141ms (339 modules)
+ GET / 200 in 312ms
+ GET / 200 in 217ms
+ GET / 200 in 234ms
+ GET / 200 in 223ms
+ GET / 200 in 280ms
+ ✓ Compiled in 398ms (341 modules)
+ ✓ Compiled /api/projects in 167ms (229 modules)
+ GET /api/projects 304 in 204ms
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 318ms
+ GET /api/projects 304 in 4ms
+ ✓ Compiled in 269ms (411 modules)
+ GET /api/projects 304 in 27ms
+ ✓ Compiled in 108ms (411 modules)
+ GET /api/projects 304 in 9ms
+ ✓ Compiled in 141ms (411 modules)
+ GET /api/projects 304 in 7ms
+ ✓ Compiled in 142ms (411 modules)
+ GET /api/projects 304 in 10ms
+ ✓ Compiled in 213ms (411 modules)
+ GET /api/projects 304 in 14ms
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 327ms
+ GET /api/projects 304 in 4ms
+ ✓ Compiled in 194ms (415 modules)
+ GET /api/projects 304 in 7ms
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 272ms
+ GET /api/projects 304 in 3ms
+ ✓ Compiled in 168ms (415 modules)
+ GET /api/projects 304 in 7ms
+ ✓ Compiled in 130ms (415 modules)
+ GET /api/projects 304 in 7ms
+ ✓ Compiled in 193ms (415 modules)
+ GET /api/projects 304 in 78ms
+ ✓ Compiled in 167ms (415 modules)
+ GET /api/projects 304 in 7ms
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 331ms
+ GET /api/projects 304 in 2ms
+ GET / 200 in 235ms
+ GET /api/projects 304 in 3ms
+ GET / 200 in 256ms
+ GET /api/projects 304 in 2ms
+ ✓ Compiled in 137ms (155 modules)
+ ✓ Compiled in 74ms (176 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /api/projects in 1921ms (937 modules)
+ GET /api/projects 304 in 1059ms
+ GET / 404 in 2189ms
+ GET / 404 in 84ms
+ GET / 404 in 50ms
+ GET / 404 in 61ms
+ GET / 404 in 39ms
+ ✓ Compiled / in 449ms (879 modules)
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 827ms
+ GET / 200 in 220ms
+ GET / 200 in 232ms
+ ✓ Compiled in 251ms (533 modules)
+ ✓ Compiled /api/projects in 176ms (231 modules)
+ GET /api/projects 304 in 232ms
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 297ms
+ GET /api/projects 304 in 3ms
+ GET / 200 in 237ms
+ GET /api/projects 304 in 3ms
+ GET / 200 in 266ms
+ GET /api/projects 304 in 9ms
+ GET / 200 in 239ms
+ GET /api/projects 304 in 3ms
+ GET / 200 in 275ms
+ GET /api/projects 304 in 9ms
+ GET / 200 in 237ms
+ GET /api/projects 304 in 3ms
+ GET / 200 in 245ms
+ GET /api/projects 304 in 2ms
+ GET / 200 in 249ms
+ GET /api/projects 304 in 11ms
+ GET / 200 in 248ms
+ GET /api/projects 304 in 2ms
+ ✓ Compiled in 433ms (533 modules)
+ ✓ Compiled /api/projects in 32ms (231 modules)
+ GET /api/projects 304 in 61ms
+ ✓ Compiled in 139ms (603 modules)
+ GET /api/projects 304 in 13ms
+ ✓ Compiled in 152ms (603 modules)
+ GET /api/projects 304 in 9ms
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 317ms
+ GET /api/projects 304 in 6ms
+ GET / 200 in 280ms
+ GET /api/projects 304 in 4ms
+ GET / 200 in 240ms
+ GET /api/projects 304 in 4ms
+ GET / 200 in 266ms
+ GET /api/projects 304 in 5ms
+ ⨯ ./src/pages/index.tsx
+Error:   [31mx[0m Unexpected eof
+     ,-[[36;1;4m/Users/jessicacompere/Projects/bizsprout/src/pages/index.tsx[0m:940:21]
+ [2m938[0m |         .recent-list {
+ [2m939[0m |           list-style: none;
+ [2m940[0m |           displayിത
+     `----
+
+Caused by:
+    Syntax Error
+ ⨯ ./src/pages/index.tsx
+Error:   [31mx[0m Expression expected
+   ,-[[36;1;4m/Users/jessicacompere/Projects/bizsprout/src/pages/index.tsx[0m:1:1]
+ [2m1[0m | ...
+   : [35;1m^^^[0m
+   `----
+
+Caused by:
+    Syntax Error
+ ⨯ ./src/pages/index.tsx
+Error:   [31mx[0m Unexpected eof
+     ,-[[36;1;4m/Users/jessicacompere/Projects/bizsprout/src/pages/index.tsx[0m:211:5]
+ [2m209[0m |               <p className="microtrust">No spam. 1-click unsubscribe. We&apos;ll never sell your data.</p>
+ [2m210[0m |               {waitlistOK && (
+ [2m211[0m | ...
+     `----
+
+Caused by:
+    Syntax Error
+ ⨯ ./src/pages/index.tsx
+Error:   [31mx[0m Unexpected eof
+     ,-[[36;1;4m/Users/jessicacompere/Projects/bizsprout/src/pages/index.tsx[0m:211:5]
+ [2m209[0m |               <p className="microtrust">No spam. 1-click unsubscribe. We&apos;ll never sell your data.</p>
+ [2m210[0m |               {waitlistOK && (
+ [2m211[0m | ...
+     `----
+
+Caused by:
+    Syntax Error
+ ○ Compiling /_error ...
+ GET / 500 in 2075ms
+ GET / 500 in 50ms
+ GET / 500 in 20ms
+ ✓ Compiled /_error in 750ms (671 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 307ms
+ ⨯ ./src/pages/index.tsx
+Error:   [31mx[0m Expected a semicolon
+     ,-[[36;1;4m/Users/jessicacompere/Projects/bizsprout/src/pages/index.tsx[0m:121:1]
+ [2m118[0m |       return;
+ [2m119[0m |     }
+ [2m120[0m |     const b64 =
+ [2m121[0m |       "JVBERi0xLjQKJdPr6eEKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA6"]}TSX
+     : [35;1m                                                                                                                                                                                                                                                ^[0m
+     `----
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4m/Users/jessicacompere/Projects/bizsprout/src/pages/index.tsx[0m:121:1]
+ [2m118[0m |       return;
+ [2m119[0m |     }
+ [2m120[0m |     const b64 =
+ [2m121[0m |       "JVBERi0xLjQKJdPr6eEKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA6"]}TSX
+     : [35;1m                                                                                                                                                                                                                                                  ^^^[0m
+     `----
+  [31mx[0m Expected '}', got '<eof>'
+     ,-[[36;1;4m/Users/jessicacompere/Projects/bizsprout/src/pages/index.tsx[0m:121:1]
+ [2m118[0m |       return;
+ [2m119[0m |     }
+ [2m120[0m |     const b64 =
+ [2m121[0m |       "JVBERi0xLjQKJdPr6eEKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA6"]}TSX
+     : [35;1m                                                                                                                                                                                                                                                     ^[0m
+     `----
+
+Caused by:
+    Syntax Error
+ ⚠ Fast Refresh had to perform a full reload when ./src/pages/index.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 226ms (671 modules)
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 371ms
+ ✓ Compiled /api/projects in 251ms (370 modules)
+ GET /api/projects 304 in 299ms
+ ✓ Compiled in 299ms (665 modules)
+ ⚠ Fast Refresh had to perform a full reload when ./src/pages/index.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 276ms
+ ⨯ ./src/pages/index.tsx
+Error:   [31mx[0m Expected '</', got '('
+      ,-[[36;1;4m/Users/jessicacompere/Projects/bizsprout/src/pages/index.tsx[0m:1146:1]
+ [2m1143[0m |                           name="pay"
+ [2m1144[0m |                           value={option}
+ [2m1145[0m |                           checked={surveyPay === option}
+ [2m1146[0m |                           onChange(() => setSurveyPay(option)}
+      : [35;1m                                  ^[0m
+ [2m1147[0m |                         />
+ [2m1148[0m |                         {option}
+ [2m1149[0m |                       </label>
+      `----
+
+Caused by:
+    Syntax Error
+ ✓ Compiled in 296ms (671 modules)
+ ⚠ Fast Refresh had to perform a full reload when ./src/pages/index.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 279ms
+ ✓ Compiled in 136ms (671 modules)
+ ✓ Compiled in 140ms (671 modules)
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 336ms
+ ✓ Compiled in 454ms (671 modules)
+ ✓ Compiled in 241ms (671 modules)
+ ✓ Compiled in 139ms (671 modules)
+ ✓ Compiled in 227ms (671 modules)
+ ✓ Compiled in 211ms (671 modules)
+ ✓ Compiled in 223ms (671 modules)
+ ✓ Compiled in 195ms (671 modules)
+ ✓ Compiled in 384ms (671 modules)
+ ✓ Compiled in 371ms (671 modules)
+ ✓ Compiled in 511ms (671 modules)
+ ✓ Compiled in 224ms (671 modules)
+ ✓ Compiled in 204ms (671 modules)
+ ✓ Compiled in 318ms (671 modules)
+ ✓ Compiled in 556ms (671 modules)
+ ✓ Compiled in 343ms (671 modules)
+ ✓ Compiled in 236ms (671 modules)
+ ✓ Compiled in 303ms (671 modules)
+ ✓ Compiled in 286ms (671 modules)
+ ✓ Compiled in 337ms (671 modules)
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 345ms
+ GET / 200 in 297ms
+ ✓ Compiled in 426ms (671 modules)
+ ✓ Compiled in 242ms (671 modules)
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 354ms
+ GET / 200 in 290ms
+ ✓ Compiled in 833ms (671 modules)
+ ✓ Compiled in 351ms (671 modules)
+ ✓ Compiled in 128ms (671 modules)
+ ✓ Compiled in 262ms (671 modules)
+ ✓ Compiled in 361ms (671 modules)
+ ✓ Compiled in 458ms (671 modules)
+ ✓ Compiled in 247ms (671 modules)
+ ✓ Compiled in 142ms (671 modules)
+ ✓ Compiled in 485ms (671 modules)
+ ✓ Compiled in 259ms (671 modules)
+ ✓ Compiled in 348ms (671 modules)
+ ✓ Compiled in 363ms (671 modules)
+ ✓ Compiled in 140ms (671 modules)
+ ✓ Compiled in 280ms (671 modules)
+ ✓ Compiled in 363ms (671 modules)
+ ✓ Compiled in 283ms (671 modules)
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 350ms
+ GET / 200 in 345ms
+ GET / 200 in 345ms
+ ○ Compiling /api/validate ...
+ ✓ Compiled /api/validate in 794ms (388 modules)
+ POST /api/validate 200 in 902ms
+ ✓ Compiled /api/survey in 258ms (370 modules)
+[survey] submission {
+  at: '2025-09-18T20:09:01.839Z',
+  name: 'wagner',
+  email: 'kreyolthrivebiz@gmail.com',
+  role: 'Entrepreneur / Startup Founder',
+  biggestChallenge: 'Website/branding',
+  usedAI: 'Yes',
+  tryAutoBuild: 'Maybe / Need details',
+  blockers: [ 'Branding/design difficulties', 'Technical issues' ],
+  mustHaveFeature: 'improvement',
+  improvement: 'thank you'
+}
+ POST /api/survey 200 in 295ms
+ ✓ Compiled in 574ms (671 modules)
+ ✓ Compiled in 317ms (671 modules)
+ ✓ Compiled in 438ms (671 modules)
+ ✓ Compiled in 207ms (671 modules)
+ ✓ Compiled in 143ms (671 modules)
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 407ms
+ ✓ Compiled /api/validate in 426ms (388 modules)
+ POST /api/validate 200 in 516ms
+ ✓ Compiled /api/survey in 181ms (370 modules)
+[survey] submission {
+  at: '2025-09-18T20:34:17.598Z',
+  name: 'wagner',
+  email: 'wag.desir@yahoo.com',
+  role: 'Entrepreneur / Startup Founder',
+  biggestChallenge: 'Website/branding',
+  usedAI: 'Yes',
+  tryAutoBuild: 'Maybe / Need details',
+  blockers: [ 'Unclear demand', 'Lack of time/resources' ],
+  mustHaveFeature: 'thank you',
+  improvement: 'thank you'
+}
+ POST /api/survey 200 in 215ms
+ ✓ Compiled /api/report in 77ms (377 modules)
+ POST /api/report 200 in 159ms
+ ✓ Compiled /api/validate in 153ms (388 modules)
+ POST /api/validate 200 in 204ms
+ ✓ Compiled /api/survey in 150ms (370 modules)
+[survey] submission {
+  at: '2025-09-18T20:39:25.092Z',
+  name: 'wag',
+  email: 'kreyolthrivebiz@gmail.com',
+  role: 'Entrepreneur / Startup Founder',
+  biggestChallenge: 'Tech setup',
+  usedAI: 'Yes',
+  tryAutoBuild: 'Yes',
+  blockers: [ 'Unclear demand' ],
+  mustHaveFeature: 'thank you',
+  improvement: 'thank you'
+}
+ POST /api/survey 200 in 177ms
+ ✓ Compiled /api/report in 47ms (377 modules)
+ POST /api/report 200 in 65ms
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component
+ GET / 200 in 355ms
+ ✓ Compiled /api/validate in 163ms (388 modules)
+ POST /api/validate 200 in 191ms
+Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=General+Sans:wght@500;600;700&display=swap"). Use Document instead. 
+See more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component

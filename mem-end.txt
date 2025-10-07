@@ -1,0 +1,2 @@
+  PID    RSS ELAPSED COMMAND
+69506  25600   04:23 node /opt/homebrew/opt/node@20/bin/pnpm start -p 3002

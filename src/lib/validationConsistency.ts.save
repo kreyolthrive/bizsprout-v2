@@ -1,0 +1,251 @@
+mkdir -p src/lib
+cat > src/lib/validationConsistency.ts <<'TS'
+// (paste your full TypeScript here: imports + functions like actionPlan,
+// rationaleFromScores, applyHeuristics, etc. Nothing else—no shell prompts.)
+TS
+
+pnpm dlx eslint src/lib/validationConsistency.ts --ext .ts,.tsx --fix
+pnpm typecheck --silent || true
+
+
+pnpm dlx eslint src/lib/validationConsistency.ts --ext .ts,.tsx --fix
+pnpm typecheck --silent || true
+
+pnpm typecheck && pnpm lint && pnpm build
+
+// src/lib/validationConsistency.ts
+export type Scores = Record<string, number> & {
+  demand: number;
+  moat: number;
+  economics: number;
+  distribution: number;
+};
+
+export type UnitEconomics = {
+  cac?: number;
+  payback_months?: number; // auto_stop if > 24
+  arpu_monthly?: number;
+  gross_margin?: number; // 0..1
+};
+
+export type Saturation = {
+  market_saturation_pct?: number; // 0..100, auto_stop if > 80
+  moat_factors?: string[];
+};
+
+export type ValidationExtras = {
+  monthly_revenue_est?: number;
+  industry_cac_default?: number;
+  auto_stop?: string; // e.g., "PAYBACK_GT_24M" | "SATURATION_GT_80_PCT"
+};
+export type ValidateDecision = "GO" | "REVIEW" | "NO-GO";
+
+export function overallScore(scores: Scores): number {
+  const vals = Object.values(scores ?? {});
+  if (!vals.length) return 0;
+  const sum = vals.reduce((a, b) => a + b, 0);
+  return Math.round((sum / (vals.length * 10)) * 100);
+}
+
+export function decision(scores: Scores): ValidateDecision {
+  const overall = overallScore(scores);
+  if (overall >= 70) return "GO";
+  if (overall >= 40) return "REVIEW";
+  return "NO-GO";
+}
+
+export function actionPlan(status: ValidateDecision) {
+  if (status === "NO-GO") {
+    return [
+      "STOP. Do not proceed with this idea. Consider completely different opportunities.",
+      "Consider vertical-specific alternatives (e.g., construction PM, legal workflows, healthcare compliance).",
+      "Research underserved niches rather than competing in saturated markets."
+    ];
+  }
+  if (status === "REVIEW") {
+    return [
+      "Run 5–10 customer interviews to validate problem severity and willingness to pay.",
+      "Launch a narrow landing page test for a single ICP and clear offer.",
+      "Estimate CAC and payback from early signals; adjust pricing/channel fit."
+    ];
+  }
+  // GO
+  return [
+    "Prioritize the narrowest ICP and finalize the core feature set.",
+    "Ship onboarding, pricing, and basic activation tracking.",
+    "Plan a 4-week launch with 2–3 channel experiments."
+  ];
+}
+
+export function rationaleFromScores(
+  scores: Scores,
+  meta?: { category?: string; title?: string }
+) {
+  const items: string[] = [];
+  const overall = overallScore(scores);
+  const status = overall >= 70 ? "PROCEED" : overall >= 40 ? "REVIEW" : "DO NOT PROCEED";
+  items.push(`Overall Score: ${overall}% - ${status}`);
+
+  const isPM = /project\s*management|(^|\s)pm(\s|$)/i.test(meta?.category ?? meta?.title ?? "");
+
+  if (isPM && overall <= 30) {
+    items.push(
+      `Demand (${scores.demand}/10): Market oversupplied with established solutions (Asana, Monday.com, Notion)`,
+      `Moat (${scores.moat}/10): No differentiation from dozens of existing competitors`,
+      `Economics (${scores.economics}/10): 86-month CAC payback makes business model impossible`,
+      `Distribution (${scores.distribution}/10): Acquisition extremely difficult against billion-dollar incumbents`
+    );
+    return items;
+  }
+
+  // Default value-aware rationale
+  items.push(
+    `Demand (${scores.demand}/10): ${scores.demand <= 3 ? "Insufficient validated demand signals" : "Some credible early signals"}`,
+    `Moat (${scores.moat}/10): ${scores.moat <= 3 ? "Weak defensibility vs incumbents" : "Emerging differentiation potential"}`,
+    `Economics (${scores.economics}/10): ${scores.economics <= 3 ? "Unfavorable CAC/payback assumptions" : "Unit economics trending acceptable"}`,
+    `Distribution (${scores.distribution}/10): ${scores.distribution <= 3 ? "No reliable channels identified" : "At least one plausible channel identified"}`
+  );
+
+  return items;
+}
+
+
+export function applyHeuristics(
+  scores: Scores,
+  ue: UnitEconomics,
+  sat: Saturation
+): { scores: Scores; extras: ValidationExtras } {
+  let adjusted = { ...scores } as Scores;
+  const extras: ValidationExtras = {};
+
+  if (typeof ue.arpu_monthly === 'number' && typeof ue.gross_margin === 'number') {
+    extras.monthly_revenue_est = ue.arpu_monthly * Math.max(0, Math.min(1, ue.gross_margin));
+  }
+
+  if (typeof ue.payback_months === 'number' && ue.payback_months > 24) {
+    extras.auto_stop = 'PAYBACK_GT_24M';
+    adjusted = { ...adjusted, economics: Math.min(adjusted.economics, 2) };
+  }
+
+  if (typeof sat.market_saturation_pct === 'number' && sat.market_saturation_pct > 80) {
+    extras.auto_stop = extras.auto_stop ?? 'SATURATION_GT_80_PCT';
+    adjusted = {
+      ...adjusted,
+      demand: Math.min(adjusted.demand, 2),
+      distribution: Math.min(adjusted.distribution, 2),
+    };
+  }
+
+  return { scores: adjusted, extras };
+}
+
+nano src/lib/validationConsistency.ts
+
+nano src/lib/validationConsistency.ts
+
+nano src/lib/validationConsistency.ts
+
+
+
+// src/lib/validationConsistency.ts
+import type {
+  Scores,
+  UnitEconomics,
+  Saturation,
+  ValidationExtras,
+} from "@/types/validation";
+
+export type ValidateDecision = "GO" | "REVIEW" | "NO-GO";
+
+export function overallScore(scores: Scores): number {
+  const vals = Object.values(scores ?? {});
+  if (!vals.length) return 0;
+  const sum = vals.reduce((a, b) => a + b, 0);
+  return Math.round((sum / (vals.length * 10)) * 100);
+}
+
+export function decision(scores: Scores): ValidateDecision {
+  const overall = overallScore(scores);
+  if (overall >= 70) return "GO";
+  if (overall >= 40) return "REVIEW";
+  return "NO-GO";
+}
+
+export function actionPlan(status: ValidateDecision): string[] {
+  if (status === "NO-GO") {
+    return [
+      "STOP. Do not proceed with this idea. Consider completely different opportunities.",
+      "Consider vertical-specific alternatives (e.g., construction PM, legal workflows, healthcare compliance).",
+      "Research underserved niches rather than competing in saturated markets.",
+    ];
+  }
+  if (status === "REVIEW") {
+    return [
+      "Run 5–10 customer interviews to validate problem severity and willingness to pay.",
+      "Launch a narrow landing page test for a single ICP and clear offer.",
+      "Estimate CAC and payback from early signals; adjust pricing/channel fit.",
+    ];
+  }
+  return [
+    "Prioritize the narrowest ICP and finalize the core feature set.",
+    "Ship onboarding, pricing, and basic activation tracking.",
+    "Plan a 4-week launch with 2–3 channel experiments.",
+  ];
+}
+
+export function rationaleFromScores(
+  scores: Scores,
+  meta?: { category?: string; title?: string }
+): string[] {
+  const items: string[] = [];
+  const overall = overallScore(scores);
+  const status = overall >= 70 ? "PROCEED" : overall >= 40 ? "REVIEW" : "DO NOT PROCEED";
+  items.push(`Overall Score: ${overall}% - ${status}`);
+
+  const isPM = /project\s*management|(^|\s)pm(\s|$)/i.test(meta?.category ?? meta?.title ?? "");
+  if (isPM && overall <= 30) {
+    items.push(
+      `Demand (${scores.demand}/10): Market oversupplied with established solutions (Asana, Monday.com, Notion)`,
+      `Moat (${scores.moat}/10): No differentiation from dozens of existing competitors`,
+      `Economics (${scores.economics}/10): 86-month CAC payback makes business model impossible`,
+      `Distribution (${scores.distribution}/10): Acquisition extremely difficult against billion-dollar incumbents`
+    );
+    return items;
+  }
+
+  items.push(
+    `Demand (${scores.demand}/10): ${scores.demand <= 3 ? "Insufficient validated demand signals" : "Some credible early signals"}`,
+    `Moat (${scores.moat}/10): ${scores.moat <= 3 ? "Weak defensibility vs incumbents" : "Emerging differentiation potential"}`,
+    `Economics (${scores.economics}/10): ${scores.economics <= 3 ? "Unfavorable CAC/payback assumptions" : "Unit economics trending acceptable"}`,
+    `Distribution (${scores.distribution}/10): ${scores.distribution <= 3 ? "No reliable channels identified" : "At least one plausible channel identified"}`
+  );
+  return items;
+}
+
+export function applyHeuristics(
+  scores: Scores,
+  ue: UnitEconomics = {},
+  sat: Saturation = {}
+): { scores: Scores; extras: ValidationExtras } {
+  let next = { ...scores };
+  const extras: ValidationExtras = {};
+
+  if (ue.arpu_monthly && ue.gross_margin) {
+    extras.monthly_revenue_est = ue.arpu_monthly * ue.gross_margin;
+  }
+  if (typeof ue.payback_months === "number" && ue.payback_months > 24) {
+    extras.auto_stop = "PAYBACK_GT_24M";
+    next.economics = Math.min(next.economics, 2);
+  }
+  if (typeof sat.market_saturation_pct === "number" && sat.market_saturation_pct > 80) {
+    extras.auto_stop ??= "SATURATION_GT_80_PCT";
+    next.demand = Math.min(next.demand, 2);
+    next.distribution = Math.min(next.distribution, 2);
+  }
+  return { scores: next, extras };
+}
+
+
+echo OK
+
+stty sane; reset; exec zsh -l
